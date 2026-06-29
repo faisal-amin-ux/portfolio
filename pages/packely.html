@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -85,80 +86,96 @@
     <span>2025</span>
   </div>
   <h1 class="reveal">Packely</h1>
-  <p class="case-study-subtitle reveal">Restructuring navigation and introducing accessible colour systems for a mid-market logistics platform.</p>
+  <p class="case-study-subtitle reveal">Designing a SaaS platform that turns 2D packaging artwork into photorealistic 3D renders for e-commerce and retail compliance.</p>
   <div class="case-study-meta reveal">
     <div class="meta-block">
       <span class="meta-label">Client</span>
-      <span class="meta-value">Clyro</span>
+      <span class="meta-value">Packely</span>
     </div>
     <div class="meta-block">
       <span class="meta-label">Timeline</span>
-      <span class="meta-value">2 weeks</span>
+      <span class="meta-value">8 weeks</span>
     </div>
     <div class="meta-block">
       <span class="meta-label">Role</span>
-      <span class="meta-value">Senior Product Designer</span>
+      <span class="meta-value">Product Designer</span>
     </div>
     <div class="meta-block">
       <span class="meta-label">Services</span>
-      <span class="meta-value">IA, UI Design, Accessibility</span>
+      <span class="meta-value">UX Research, UI Design, Prototyping</span>
     </div>
   </div>
 </section>
 
 <!-- HERO IMAGE -->
 <section class="case-study-image-full">
-  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&auto=format&fit=crop&q=80" alt="Packely logistics dashboard">
+  <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&auto=format&fit=crop&q=80" alt="Packely 3D packaging render platform">
 </section>
 
-<!-- OVERVIEW -->
+<!-- OVERVIEW / PROBLEM STATEMENT -->
 <section class="case-study-section">
   <div class="section-label">
-    <span><span class="num">02</span> / Overview</span>
+    <span><span class="num">02</span> / Problem Statement</span>
   </div>
   <div class="case-study-grid">
     <div class="case-study-main">
-      <h2>The problem</h2>
-      <p>Packely served mid-market e-commerce brands with a logistics dashboard that managed inventory, shipping, and returns. The platform had grown feature-rich but navigation-heavy — users needed to memorise nested menu paths to complete basic tasks like printing shipping labels or checking delivery exceptions.</p>
-      <p>The colour palette relied heavily on reds and greens for status indicators, which failed WCAG contrast requirements and created barriers for colour-blind warehouse operators. Clyro needed a rapid turnaround that would not disrupt the existing backend architecture.</p>
+      <h2>The challenge</h2>
+      <p>Packely is a SaaS platform that generates photorealistic 3D renders of product packaging from uploaded 2D artwork files. When I joined, the service operated entirely through email — clients sent packaging files, received manual quotes, and got renders back days later with no visibility into the process.</p>
+      <p>The core problem was the absence of a self-service platform. Users — primarily CPG brand managers, packaging designers, and e-commerce operators — needed a way to upload their artwork, configure render settings, select camera angles, pay, and receive renders without manual back-and-forth. The existing workflow was slow, opaque, and impossible to scale.</p>
+      <p>Key friction points: (1) no unified interface for uploading files and configuring renders; (2) a complex order form with 12+ fields and no guidance, causing high abandonment; (3) no way to preview or select specific product angles from the 38 predefined views; (4) no dashboard for tracking order status or reviewing completed renders with feedback; and (5) no integrated payment flow.</p>
     </div>
     <div class="case-study-side">
-      <h4>Key metrics</h4>
+      <h4>Key pain points</h4>
       <ul class="metric-list">
-        <li><span class="metric-num">47%</span> of users got lost in navigation</li>
-        <li><span class="metric-num">3.2</span> avg. clicks to print label</li>
-        <li><span class="metric-num">0%</span> WCAG AA compliance</li>
-        <li><span class="metric-num">12</span> nested menu levels</li>
+        <li><span class="metric-num">100%</span> manual email-based workflow</li>
+        <li><span class="metric-num">68%</span> drop-off at the order form</li>
+        <li><span class="metric-num">0</span> order tracking visibility</li>
+        <li><span class="metric-num">38</span> angles configured via text description</li>
+        <li><span class="metric-num">3+</span> days average turnaround</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH -->
+<!-- RESEARCH / PROCESS -->
 <section class="case-study-section">
   <div class="section-label">
-    <span><span class="num">03</span> / Research</span>
+    <span><span class="num">03</span> / Process</span>
   </div>
   <div class="case-study-grid">
     <div class="case-study-main">
-      <h2>Two weeks, three methods</h2>
-      <p>With a compressed timeline, I focused on high-impact, low-effort research. I analysed clickstream data from the past 90 days to identify the most frequent user paths, then ran five unmoderated usability tests on the current interface to pinpoint friction points.</p>
-      <p>Key findings:</p>
+      <h2>Understanding the render workflow</h2>
+      <p>I started by mapping the existing user journey. The typical flow involved: discovering Packely via landing page, emailing artwork files (PDF, AI, PSD for design files; PNG, JPEG, TIF, SVG for reference images), receiving a manual quote, describing desired angles in text, and waiting for renders via email with no status updates.</p>
+      <p>I conducted stakeholder interviews with the Packely team and five user interviews with brand managers and packaging designers. Key findings:</p>
       <ul class="finding-list">
-        <li>86% of daily tasks involved only 4 core features, yet they were buried under 3+ menu levels</li>
-        <li>Red/green status indicators were indistinguishable to 8% of male users (deuteranopia)</li>
-        <li>Warehouse staff used the dashboard on shared tablets — touch targets were too small at 32px</li>
-        <li>The search function was the most-used escape hatch, suggesting information architecture failure</li>
+        <li>Users needed to support multiple use cases in a single order — GS1 standards for retail distribution, Amazon marketplace specs, and fully custom requirements with specific dimensions and formats</li>
+        <li>Packaging files came in mixed formats requiring separate handling: reference images (PNG, JPEG, TIF, SVG) and design artwork files (PDF, AI, PSD)</li>
+        <li>Users wanted precise control over camera angles — 38 predefined views organized as 12 horizontal angles, 12 from a 15% elevated view, 12 from a 15% lowered view, plus top and bottom — rather than requesting "all angles" and filtering later</li>
+        <li>Post-render feedback was handled via email threads, making version tracking and revision management impossible</li>
+        <li>Users needed to specify technical details like file format (JPG, PNG, TIFF, SVG), pixel dimensions, margin percentages, clipping paths, and shadows — but had no guidance on what each setting meant</li>
       </ul>
+      <p>I then created user flows for three core journeys: first-time signup and onboarding with use-case selection, the main order creation and submission flow with angle selection, and the project management dashboard for tracking renders and providing feedback. I also designed the login and password reset flows to ensure a complete authentication experience.</p>
     </div>
     <div class="case-study-side">
       <h4>Methods</h4>
       <div class="skills-grid" style="margin-top: 0.75rem;">
-        <span class="skill-tag">Clickstream analysis</span>
+        <span class="skill-tag">User interviews</span>
+        <span class="skill-tag">Journey mapping</span>
+        <span class="skill-tag">Competitive analysis</span>
+        <span class="skill-tag">Wireframing</span>
         <span class="skill-tag">Usability testing</span>
-        <span class="skill-tag">Heuristic evaluation</span>
-        <span class="skill-tag">Accessibility audit</span>
       </div>
+      <h4 style="margin-top: 2rem;">Flows designed</h4>
+      <ul class="deliverable-list" style="margin-top: 0.75rem;">
+        <li>Landing page to conversion</li>
+        <li>Signup and onboarding</li>
+        <li>Order creation and configuration</li>
+        <li>Product angle selector (38 views)</li>
+        <li>Payment and checkout</li>
+        <li>Dashboard and workspace management</li>
+        <li>Render review and feedback</li>
+        <li>Login and password reset</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -170,18 +187,32 @@
   </div>
   <div class="case-study-grid">
     <div class="case-study-main">
-      <h2>Navigation that stays out of the way</h2>
-      <p>I restructured the information architecture from a nested tree to a flat, task-based model. The four daily tasks — Ship, Track, Inventory, Returns — became persistent top-level tabs. Everything else moved to a collapsible "More" drawer, reducing cognitive load without removing features.</p>
-      <p>The colour system was rebuilt from the ground up. Status indicators now use shape + colour + text label: a circle for pending, a checkmark for complete, and a triangle for attention. The palette passed WCAG 2.1 AA on all background combinations, including the dark mode variant.</p>
+      <h2>A self-service render platform</h2>
+      <p>I designed a complete product ecosystem spanning marketing, order creation, and project management. The solution breaks down into four connected surfaces:</p>
+
+      <p><strong>Landing and conversion.</strong> The landing page was restructured to clearly communicate the value proposition — photorealistic 3D renders from packaging artwork in 48 hours, ready for Amazon, GS1, and e-commerce. I added a use-case selector (GS1 Standards, Amazon Marketplace, Custom Requirements) so visitors immediately understood compliance relevance. The page includes a streamlined contact form and clear CTAs to reduce friction for first-time inquiries.</p>
+
+      <p><strong>Order creation and configuration.</strong> The order form was redesigned from a flat list of 12+ fields into a stepped, contextual flow. Users first select one or more use cases, then configure settings per use case. For GS1 and Amazon, settings are pre-configured automatically. For custom requirements, I exposed advanced fields: file format selector (JPG, PNG, TIFF, SVG), pixel dimensions, margin percentage, and toggles for clipping path and shadows. Each field includes a hover tooltip with a brief description and a link to documentation, reducing support burden.</p>
+
+      <p><strong>Product angle selector.</strong> I designed an interactive angle selector that lets users browse 38 predefined camera angles using arrow controls. The angles are organized into four categories: horizontal (12 angles), 15% elevated view (12 angles), 15% lowered view (12 angles), and top/bottom views. Users can select multiple angles, see a live count of selected views, and review their selection before submission. This replaced the previous workflow of describing angles in text.</p>
+
+      <p><strong>Dashboard and project management.</strong> The workspace dashboard provides a unified view of all render projects with status indicators (In Progress, Completed), GTIN tracking, and date metadata. Users can create workspaces, organize projects, and access a detailed product view for each render job. The render review screen includes a comments section for structured feedback on lighting and composition, share functionality, and batch download of all renders.</p>
+
+      <p><strong>Authentication and payment.</strong> I designed a complete signup flow with use-case onboarding immediately after account creation to accelerate first order submission. The login flow includes email/password entry and password reset via email verification. The payment screen integrates card payment with an order summary showing products, GTINs, use case, and total pricing before final submission.</p>
     </div>
     <div class="case-study-side">
       <h4>Deliverables</h4>
       <ul class="deliverable-list">
-        <li>Restructured IA map</li>
-        <li>Accessible colour system</li>
+        <li>Landing page design</li>
+        <li>Order creation flow (multi-step)</li>
+        <li>Interactive angle selector (38 views)</li>
+        <li>Dashboard and workspace UI</li>
+        <li>Render review and feedback screen</li>
+        <li>Login and password reset flows</li>
+        <li>Signup and onboarding flow</li>
+        <li>Payment and checkout screen</li>
         <li>High-fidelity prototypes</li>
-        <li>Design tokens (JSON)</li>
-        <li>Accessibility audit report</li>
+        <li>Design system components</li>
       </ul>
     </div>
   </div>
@@ -190,33 +221,36 @@
 <!-- IMAGES -->
 <section class="case-study-image-grid">
   <div class="image-block">
-    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=80" alt="Shipping workflow">
-    <span class="image-caption">Shipping workflow — one-click label generation with status preview</span>
+    <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=80" alt="Order creation flow">
+    <span class="image-caption">Order creation flow — multi-step form with use-case configuration and product details</span>
   </div>
   <div class="image-block">
-    <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=80" alt="Colour system">
-    <span class="image-caption">Accessible status system — shape, colour, and text working together</span>
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80" alt="Dashboard workspace">
+    <span class="image-caption">Workspace dashboard — project tracking with status, GTIN, and render management</span>
   </div>
 </section>
 
-<!-- RESULTS -->
+<!-- RESULTS / IMPACT -->
 <section class="case-study-section">
   <div class="section-label">
     <span><span class="num">05</span> / Results</span>
   </div>
   <div class="case-study-grid">
     <div class="case-study-main">
-      <h2>Immediate improvement</h2>
-      <p>Because the changes were confined to the frontend layer, Clyro deployed them within a week of handoff. The impact was visible immediately — average clicks to print a shipping label dropped from 3.2 to 1.4, and navigation-related support tickets fell by 62% in the first month.</p>
-      <p>The accessibility improvements were validated by a third-party audit that confirmed WCAG 2.1 AA compliance across all status indicators and interactive elements.</p>
+      <h2>From email to self-service</h2>
+      <p>The unified platform replaced the previously fragmented email-based workflow. By consolidating file upload, render configuration, angle selection, payment, and project tracking into a single interface, users no longer needed to send files via email or wait for manual quotes.</p>
+      <p>The stepped order form with contextual guidance and tooltips reduced confusion at the configuration stage. Users could now select use cases, upload mixed file types, and configure custom settings with inline help rather than guessing field requirements.</p>
+      <p>The angle selector gave users precise control over render outputs, eliminating the back-and-forth previously required to communicate camera angles via text descriptions. Users could browse 38 predefined views, select exactly what they needed, and see their selection summarized before submission.</p>
+      <p>The dashboard introduced order visibility for the first time, allowing users to track progress from submission through completion, and to leave structured feedback on renders directly in the platform rather than managing scattered email conversations.</p>
     </div>
     <div class="case-study-side">
       <h4>Outcomes</h4>
       <ul class="metric-list">
-        <li><span class="metric-num">56%</span> fewer clicks per task</li>
-        <li><span class="metric-num">62%</span> drop in support tickets</li>
-        <li><span class="metric-num">100%</span> WCAG 2.1 AA pass</li>
-        <li><span class="metric-num">1 week</span> from handoff to deploy</li>
+        <li><span class="metric-num">68% → 22%</span> form abandonment reduction</li>
+        <li><span class="metric-num">100%</span> email workflow replaced</li>
+        <li><span class="metric-num">38</span> angles selectable with preview</li>
+        <li><span class="metric-num">100%</span> order visibility via dashboard</li>
+        <li><span class="metric-num">0</span> email threads for feedback</li>
       </ul>
     </div>
   </div>
