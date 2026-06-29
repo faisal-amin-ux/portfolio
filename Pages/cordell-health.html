@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cordell Health — Case Study | Faisal Amin</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+<base target="_blank">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-dot"></span>
+      Faisal Amin
+    </a>
+    <nav class="nav-desktop">
+      <a href="../index.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Home</span><span>Home</span></span></span>
+      </a>
+      <a href="about.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>About</span><span>About</span></span></span>
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Projects</span><span>Projects</span></span></span>
+      </a>
+      <a href="contact.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Contact</span><span>Contact</span></span></span>
+      </a>
+    </nav>
+    <div class="header-right">
+      <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="mailto:faisal.amin.240302@gmail.com" class="header-btn">
+        <span class="btn-dot"></span>
+        <span class="sl-wrap"><span class="sl-track"><span>Get in touch</span><span>Get in touch</span></span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" aria-label="Close menu" onclick="closeMenu()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  <div class="mobile-nav-links">
+    <a href="../index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="projects.html" onclick="closeMenu()">Projects</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </div>
+  <a href="mailto:faisal.amin.240302@gmail.com" class="mobile-nav-cta" onclick="closeMenu()">
+    <span class="btn-dot"></span>
+    Get in touch
+  </a>
+</nav>
+
+<!-- CASE STUDY HERO -->
+<section class="case-study-hero">
+  <div class="section-label">
+    <span><span class="num">01</span> / Case Study</span>
+    <span>2026</span>
+  </div>
+  <h1 class="reveal">Cordell Health</h1>
+  <p class="case-study-subtitle reveal">Redesigning occupational healthcare operations for a UK-based SaaS platform serving 200+ clinics.</p>
+  <div class="case-study-meta reveal">
+    <div class="meta-block">
+      <span class="meta-label">Client</span>
+      <span class="meta-value">Modalys</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Timeline</span>
+      <span class="meta-value">6 months</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Role</span>
+      <span class="meta-value">Senior Product Designer</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-label">Services</span>
+      <span class="meta-value">Research, UI Systems, Prototyping</span>
+    </div>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<section class="case-study-image-full">
+  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&auto=format&fit=crop&q=80" alt="Cordell Health dashboard overview">
+</section>
+
+<!-- OVERVIEW -->
+<section class="case-study-section">
+  <div class="section-label">
+    <span><span class="num">02</span> / Overview</span>
+  </div>
+  <div class="case-study-grid">
+    <div class="case-study-main">
+      <h2>The problem</h2>
+      <p>Modalys operated a legacy healthcare platform that clinics used to manage occupational health assessments, medical records, and compliance reporting. The interface had grown organically over five years, resulting in fragmented workflows, inconsistent UI patterns, and a steep learning curve for new staff.</p>
+      <p>Clinic administrators reported spending 20+ minutes per patient just navigating between modules. The design-to-development handoff was chaotic — no component library existed, and every screen was built from scratch.</p>
+    </div>
+    <div class="case-study-side">
+      <h4>Key metrics</h4>
+      <ul class="metric-list">
+        <li><span class="metric-num">200+</span> clinics using the platform</li>
+        <li><span class="metric-num">20+</span> min average task time</li>
+        <li><span class="metric-num">0</span> design system components</li>
+        <li><span class="metric-num">3 days</span> average handoff time</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="case-study-section">
+  <div class="section-label">
+    <span><span class="num">03</span> / Research</span>
+  </div>
+  <div class="case-study-grid">
+    <div class="case-study-main">
+      <h2>Understanding the clinic floor</h2>
+      <p>I conducted 12 contextual inquiries across three clinic types: corporate health centres, independent practices, and NHS-integrated facilities. Shadowing administrators revealed that the most critical workflow — booking a patient through assessment to report generation — involved 14 distinct screens with no clear progress indicator.</p>
+      <p>Key findings from stakeholder interviews:</p>
+      <ul class="finding-list">
+        <li>Administrators relied on muscle memory rather than visual cues to navigate</li>
+        <li>Doctors needed quick-access panels for patient history during consultations</li>
+        <li>Compliance officers exported data weekly but the export flow was buried three levels deep</li>
+        <li>Every clinic customised their workflow differently, requiring flexible yet consistent patterns</li>
+      </ul>
+    </div>
+    <div class="case-study-side">
+      <h4>Methods</h4>
+      <div class="skills-grid" style="margin-top: 0.75rem;">
+        <span class="skill-tag">Contextual inquiry</span>
+        <span class="skill-tag">Stakeholder interviews</span>
+        <span class="skill-tag">Journey mapping</span>
+        <span class="skill-tag">Heuristic evaluation</span>
+        <span class="skill-tag">Competitive analysis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="case-study-section">
+  <div class="section-label">
+    <span><span class="num">04</span> / Solution</span>
+  </div>
+  <div class="case-study-grid">
+    <div class="case-study-main">
+      <h2>A system that scales</h2>
+      <p>I designed a modular dashboard architecture built around progressive disclosure. The four core modules — Scheduling, Assessments, Medical Records, and Compliance — were restructured with a consistent left-hand navigation and contextual right-panel for quick actions.</p>
+      <p>The component library grew to 60+ reusable components, from simple buttons to complex data tables with inline editing. Every component was documented with usage guidelines, accessibility notes, and responsive behaviour.</p>
+    </div>
+    <div class="case-study-side">
+      <h4>Deliverables</h4>
+      <ul class="deliverable-list">
+        <li>Design system (60+ components)</li>
+        <li>Interactive prototypes</li>
+        <li>Accessibility audit (WCAG 2.1 AA)</li>
+        <li>Developer handoff documentation</li>
+        <li>User testing report</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGES -->
+<section class="case-study-image-grid">
+  <div class="image-block">
+    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80" alt="Scheduling module">
+    <span class="image-caption">Scheduling module — week view with drag-and-drop appointment management</span>
+  </div>
+  <div class="image-block">
+    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&auto=format&fit=crop&q=80" alt="Assessment workflow">
+    <span class="image-caption">Assessment workflow — step-by-step progress with contextual patient data</span>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="case-study-section">
+  <div class="section-label">
+    <span><span class="num">05</span> / Results</span>
+  </div>
+  <div class="case-study-grid">
+    <div class="case-study-main">
+      <h2>Measured impact</h2>
+      <p>After a phased rollout over three months, we saw measurable improvements across all key metrics. The most significant change was in task completion time — what previously took 20+ minutes now averaged under 8 minutes for experienced users.</p>
+      <p>The development team reported that handoff time dropped from 3 days to under 4 hours, thanks to the comprehensive component library and detailed prototypes in Figma.</p>
+    </div>
+    <div class="case-study-side">
+      <h4>Outcomes</h4>
+      <ul class="metric-list">
+        <li><span class="metric-num">60%</span> reduction in task time</li>
+        <li><span class="metric-num">90%</span> faster design handoff</li>
+        <li><span class="metric-num">4.8/5</span> admin satisfaction score</li>
+        <li><span class="metric-num">100%</span> WCAG 2.1 AA compliance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT PROJECT -->
+<section class="case-study-next">
+  <div class="section-label">
+    <span><span class="num">06</span> / Next</span>
+  </div>
+  <a href="packely.html" class="next-project-link">
+    <span class="next-label">View next case study</span>
+    <h2>Packely</h2>
+    <span class="next-arrow">→</span>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-newsletter">
+      <a href="https://medium.com/@faisal.amin.240302" target="_blank" rel="noopener" class="medium-link">
+        <h4>Read on Medium →</h4>
+      </a>
+      <form class="footer-form" onsubmit="event.preventDefault(); showSubscribeModal();">
+        <input type="email" required placeholder="your@email.com">
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+      <p class="footer-form-note">Subscribe to my Medium for notes on product, systems and shipping.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="../index.html">
+        <span class="sl-wrap"><span class="sl-track"><span>Home</span><span>Home</span></span></span>
+      </a>
+      <a href="about.html">
+        <span class="sl-wrap"><span class="sl-track"><span>About</span><span>About</span></span></span>
+      </a>
+      <a href="contact.html">
+        <span class="sl-wrap"><span class="sl-track"><span>Contact</span><span>Contact</span></span></span>
+      </a>
+      <a href="../Assets/Faisal Amin Resume.pdf" download>
+        <span class="sl-wrap"><span class="sl-track"><span>Download Resume</span><span>Download Resume</span></span></span>
+      </a>
+    </nav>
+  </div>
+  <div class="footer-get-in-touch">
+    <a href="mailto:faisal.amin.240302@gmail.com" class="git-link">
+      <span class="git-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+          <polyline points="2,5 12,13 22,5"/>
+        </svg>
+      </span>
+      <span class="git-text-wrap">
+        <span class="sl-wrap" style="height:1.05em;">
+          <span class="sl-track" style="height:2.1em;line-height:1.05em;">
+            <span style="height:1.05em;line-height:1.05em;">Get in touch</span>
+            <span style="height:1.05em;line-height:1.05em;">Get in touch</span>
+          </span>
+        </span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+<!-- SUBSCRIBE MODAL -->
+<div class="modal-overlay" id="subscribeModal">
+  <div class="modal-box">
+    <div class="confetti-box" id="confettiBox"></div>
+    <span class="modal-icon">🎉</span>
+    <div class="modal-title">You're on the list</div>
+    <p class="modal-text">Thanks for subscribing. Notes on product, systems and shipping will land in your inbox soon.</p>
+    <button class="modal-close" onclick="closeSubscribeModal()">Close</button>
+  </div>
+</div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  if (current === 'dark') {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+}
+function toggleMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const body = document.body;
+  const isOpen = mobileNav.classList.contains('open');
+  if (isOpen) { closeMenu(); } else {
+    mobileNav.classList.add('open');
+    menuToggle.classList.add('open');
+    body.classList.add('menu-open');
+  }
+}
+function closeMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const body = document.body;
+  mobileNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  body.classList.remove('menu-open');
+}
+function showSubscribeModal() {
+  const overlay = document.getElementById('subscribeModal');
+  overlay.classList.add('active');
+  spawnConfetti();
+}
+function closeSubscribeModal() {
+  document.getElementById('subscribeModal').classList.remove('active');
+}
+function spawnConfetti() {
+  const box = document.getElementById('confettiBox');
+  box.innerHTML = '';
+  const palette = ['var(--text)', 'var(--text-muted)', 'var(--text-light)', 'var(--border-light)', 'var(--text-dim)'];
+  for (let i = 0; i < 45; i++) {
+    const c = document.createElement('div');
+    c.className = 'confetti pop';
+    c.style.left = (10 + Math.random() * 80) + '%';
+    c.style.animationDelay = (Math.random() * 0.6) + 's';
+    c.style.animationDuration = (1.8 + Math.random() * 1.2) + 's';
+    c.style.background = palette[Math.floor(Math.random() * palette.length)];
+    const size = 4 + Math.random() * 8;
+    c.style.width = size + 'px';
+    c.style.height = size + 'px';
+    box.appendChild(c);
+  }
+}
+document.getElementById('subscribeModal').addEventListener('click', function(e) {
+  if (e.target === this) closeSubscribeModal();
+});
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

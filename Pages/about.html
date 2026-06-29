@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Faisal Amin</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+<base target="_blank">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-dot"></span>
+      Faisal Amin
+    </a>
+
+    <nav class="nav-desktop">
+      <a href="../index.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Home</span><span>Home</span></span></span>
+      </a>
+      <a href="about.html" class="nav-link active">
+        <span class="sl-wrap"><span class="sl-track"><span>About</span><span>About</span></span></span>
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Projects</span><span>Projects</span></span></span>
+      </a>
+      <a href="contact.html" class="nav-link">
+        <span class="sl-wrap"><span class="sl-track"><span>Contact</span><span>Contact</span></span></span>
+      </a>
+    </nav>
+
+    <div class="header-right">
+      <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="mailto:faisal.amin.240302@gmail.com" class="header-btn">
+        <span class="btn-dot"></span>
+        <span class="sl-wrap"><span class="sl-track"><span>Get in touch</span><span>Get in touch</span></span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" aria-label="Close menu" onclick="closeMenu()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  <div class="mobile-nav-links">
+    <a href="../index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" class="active" onclick="closeMenu()">About</a>
+    <a href="projects.html" onclick="closeMenu()">Projects</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </div>
+  <a href="mailto:faisal.amin.240302@gmail.com" class="mobile-nav-cta" onclick="closeMenu()">
+    <span class="btn-dot"></span>
+    Get in touch
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height: 60vh;">
+  <h1 class="reveal">
+    Quiet<br>
+    <span class="dim-text">systems</span><br>thinker.
+  </h1>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="section-label">
+    <span><span class="num">01</span> / About</span>
+    <span>Islamabad, PK</span>
+  </div>
+  <div class="intro-grid reveal">
+    <p class="intro-main">
+      Faisal Amin is <span class="dim-text">a product designer</span> who brings ambitious SaaS ideas online, <span class="dim-text">ships products with care</span>, and <span class="dim-text">pulls the right customer</span> toward what was built.
+    </p>
+    <div></div>
+    <div class="intro-side">
+      <div>
+        <h4>Problem</h4>
+        <p>Teams ship surfaces faster than they can think them through. Flows fragment, systems drift, and users carry the cost.</p>
+      </div>
+      <div>
+        <h4>Approach</h4>
+        <p>Research, IA, UI systems, prototypes and the handoff. Solo when you need it, embedded with your team when you do not. Accessible by default. Shipped on a real schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="intro" style="padding-top: 2rem;">
+  <div class="section-label">
+    <span><span class="num">02</span> / Experience</span>
+    <span>3+ years</span>
+  </div>
+  <div class="intro-grid reveal">
+    <p class="intro-main">
+      From <span class="dim-text">healthcare SaaS</span> to <span class="dim-text">AI platforms</span> and EdTech, I have <span class="dim-text">led end to end design</span> across multiple domains — <span class="dim-text">shipping systems that scale</span>.
+    </p>
+    <div></div>
+    <div class="experience-timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">February 2026 – Present</div>
+        <div class="timeline-company">Modalys</div>
+        <div class="timeline-role">Senior Product Designer</div>
+        <div class="timeline-desc">
+          Led end-to-end design of an occupational healthcare SaaS. Built IA and user flows across 4 core modules, improving operational efficiency through progressive disclosure and phased data input.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">December 2025 – January 2026</div>
+        <div class="timeline-company">Face44</div>
+        <div class="timeline-role">Multidisciplinary Designer</div>
+        <div class="timeline-desc">
+          Designed and improved the marketing website and SaaS platform for crop.photo, focusing on usability, layout and clarity. Collaborated with stakeholders to translate business requirements into functional UI.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">April 2024 – November 2025</div>
+        <div class="timeline-company">Clyro</div>
+        <div class="timeline-role">Mid-Level UX Designer</div>
+        <div class="timeline-desc">
+          Led UX/UI design for 50+ SaaS projects across AI, fintech, and e-commerce. Orchestrated end-to-end platforms from scratch, including dashboards, workflows, and scalable design systems.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">August 2024 – July 2025</div>
+        <div class="timeline-company">OctiLearn</div>
+        <div class="timeline-role">Product Designer · Contract</div>
+        <div class="timeline-desc">
+          Contributed to pre-launch product design supporting 3,000+ user sign-ups. Designed Flashcards, Simulations, Octavia AI assistant, and Referral system. Reduced drop-offs through improved onboarding.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">May 2023 – March 2024</div>
+        <div class="timeline-company">Takhleeq.io</div>
+        <div class="timeline-role">Junior UX Designer</div>
+        <div class="timeline-desc">
+          Conducted 50+ surveys and interviews. Created responsive websites for 10+ clients. Reduced design iteration cycles by 40% through structured collaboration and development-ready deliverables.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & TOOLS -->
+<section class="intro" style="padding-top: 2rem;">
+  <div class="section-label">
+    <span><span class="num">03</span> / Education & Tools</span>
+    <span>Foundation</span>
+  </div>
+  <div class="intro-grid reveal">
+    <p class="intro-main">
+      Mechanical engineering background, <span class="dim-text">self-taught</span> in design systems and user research. <span class="dim-text">Certified by Google and Uxcel in UX and product design</span>.
+    </p>
+    <div></div>
+    <div class="intro-side">
+      <div>
+        <h4>Education</h4>
+        <div class="timeline-item education-single" style="padding-bottom: 1.5rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+          <div class="timeline-date">Oct 2020 – Jun 2024</div>
+          <div class="timeline-company" style="font-size: 1rem;">National University of Sciences & Technology</div>
+          <div class="timeline-role">Bachelors in Mechanical Engineering</div>
+        </div>
+      </div>
+      <div>
+        <h4>Certifications</h4>
+        <div class="skills-grid" style="margin-top: 0.75rem;">
+          <span class="skill-tag">Google UX Design</span>
+          <span class="skill-tag">Uxcel Product Designer</span>
+        </div>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <div class="skills-grid" style="margin-top: 0.75rem;">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Figjam</span>
+          <span class="skill-tag">Miro</span>
+          <span class="skill-tag">Framer</span>
+          <span class="skill-tag">Jitter</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Adobe XD</span>
+          <span class="skill-tag">ClickUp</span>
+          <span class="skill-tag">Slack</span>
+          <span class="skill-tag">LottieLab</span>
+        </div>
+      </div>
+      <div>
+        <h4>Skills</h4>
+        <div class="skills-grid" style="margin-top: 0.75rem;">
+          <span class="skill-tag">User research</span>
+          <span class="skill-tag">Sitemap</span>
+          <span class="skill-tag">UI architecture</span>
+          <span class="skill-tag">Wireframing</span>
+          <span class="skill-tag">WCAG 2.1</span>
+          <span class="skill-tag">Design systems</span>
+          <span class="skill-tag">Usability testing</span>
+          <span class="skill-tag">Interface design</span>
+          <span class="skill-tag">Responsive design</span>
+          <span class="skill-tag">Prototyping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-section" style="margin-top: 5rem;">
+  <div class="marquee-track">
+    <span class="marquee-logo"><svg viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="3" height="12" fill="currentColor" opacity="0.7"/><rect x="7" y="6" width="3" height="20" fill="currentColor"/><rect x="12" y="12" width="3" height="8" fill="currentColor" opacity="0.5"/><text x="22" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">MODALYS</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="18" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="14" r="3" fill="currentColor"/><path d="M6 24c2-4 10-4 10 0" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">FACE44</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M18 10c-4 0-8 2.5-8 6s4 6 8 6" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="28" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">CLYRO</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 200 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6v20M1 16h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><text x="28" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.06em" fill="currentColor">CORDELL HEALTH</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="18" height="16" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h18M6 12v-4h10v4" stroke="currentColor" stroke-width="1.5"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">PACKELY</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4l8 4v12l-8 4-8-4V8z" stroke="currentColor" stroke-width="1.5"/><path d="M7 16l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">TRUID</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l6-12 6 12M8 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 8v14M22 8l-4 7 4 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">UXCEL</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="16" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M11 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.06em" fill="currentColor">GOOGLE UX</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4l8 4v12l-8 4-8-4V8z" stroke="currentColor" stroke-width="1.5"/><text x="6" y="20" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="currentColor">N</text><text x="24" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.1em" fill="currentColor">NUST</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="10" width="3" height="12" fill="currentColor" opacity="0.7"/><rect x="7" y="6" width="3" height="20" fill="currentColor"/><rect x="12" y="12" width="3" height="8" fill="currentColor" opacity="0.5"/><text x="22" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">MODALYS</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="18" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="14" r="3" fill="currentColor"/><path d="M6 24c2-4 10-4 10 0" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">FACE44</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M18 10c-4 0-8 2.5-8 6s4 6 8 6" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="28" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">CLYRO</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 200 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 6v20M1 16h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><text x="28" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.06em" fill="currentColor">CORDELL HEALTH</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="18" height="16" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h18M6 12v-4h10v4" stroke="currentColor" stroke-width="1.5"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">PACKELY</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4l8 4v12l-8 4-8-4V8z" stroke="currentColor" stroke-width="1.5"/><path d="M7 16l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">TRUID</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l6-12 6 12M8 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 8v14M22 8l-4 7 4 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="30" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.08em" fill="currentColor">UXCEL</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="16" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M11 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><text x="26" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.06em" fill="currentColor">GOOGLE UX</text></svg></span>
+    <span class="marquee-logo"><svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4l8 4v12l-8 4-8-4V8z" stroke="currentColor" stroke-width="1.5"/><text x="6" y="20" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="currentColor">N</text><text x="24" y="21" font-family="Inter, sans-serif" font-size="13" font-weight="800" letter-spacing="0.1em" fill="currentColor">NUST</text></svg></span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="margin-top: 0;">
+  <div class="footer-main">
+    <div class="footer-newsletter">
+      <a href="https://medium.com/@faisal.amin.240302" target="_blank" rel="noopener" class="medium-link">
+        <h4>Read on Medium →</h4>
+      </a>
+      <form class="footer-form" onsubmit="event.preventDefault(); showSubscribeModal();">
+        <input type="email" required placeholder="your@email.com">
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+      <p class="footer-form-note">Subscribe to my Medium for notes on product, systems and shipping.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="../index.html">
+        <span class="sl-wrap"><span class="sl-track"><span>Home</span><span>Home</span></span></span>
+      </a>
+      <a href="projects.html">
+        <span class="sl-wrap"><span class="sl-track"><span>Projects</span><span>Projects</span></span></span>
+      </a>
+      <a href="contact.html">
+        <span class="sl-wrap"><span class="sl-track"><span>Contact</span><span>Contact</span></span></span>
+      </a>
+      <a href="../Assets/Faisal Amin Resume.pdf" download>
+        <span class="sl-wrap"><span class="sl-track"><span>Download Resume</span><span>Download Resume</span></span></span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="footer-get-in-touch">
+    <a href="mailto:faisal.amin.240302@gmail.com" class="git-link">
+      <span class="git-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+          <polyline points="2,5 12,13 22,5"/>
+        </svg>
+      </span>
+      <span class="git-text-wrap">
+        <span class="sl-wrap" style="height:1.05em;">
+          <span class="sl-track" style="height:2.1em;line-height:1.05em;">
+            <span style="height:1.05em;line-height:1.05em;">Get in touch</span>
+            <span style="height:1.05em;line-height:1.05em;">Get in touch</span>
+          </span>
+        </span>
+      </span>
+    </a>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+<!-- SUBSCRIBE MODAL -->
+<div class="modal-overlay" id="subscribeModal">
+  <div class="modal-box">
+    <div class="confetti-box" id="confettiBox"></div>
+    <span class="modal-icon">🎉</span>
+    <div class="modal-title">You're on the list</div>
+    <p class="modal-text">Thanks for subscribing. Notes on product, systems and shipping will land in your inbox soon.</p>
+    <button class="modal-close" onclick="closeSubscribeModal()">Close</button>
+  </div>
+</div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  if (current === 'dark') {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+function toggleMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const body = document.body;
+  const isOpen = mobileNav.classList.contains('open');
+  if (isOpen) {
+    closeMenu();
+  } else {
+    mobileNav.classList.add('open');
+    menuToggle.classList.add('open');
+    body.classList.add('menu-open');
+  }
+}
+
+function closeMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const body = document.body;
+  mobileNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  body.classList.remove('menu-open');
+}
+
+function showSubscribeModal() {
+  const overlay = document.getElementById('subscribeModal');
+  overlay.classList.add('active');
+  spawnConfetti();
+}
+
+function closeSubscribeModal() {
+  document.getElementById('subscribeModal').classList.remove('active');
+}
+
+function spawnConfetti() {
+  const box = document.getElementById('confettiBox');
+  box.innerHTML = '';
+  const palette = ['var(--text)', 'var(--text-muted)', 'var(--text-light)', 'var(--border-light)', 'var(--text-dim)'];
+  for (let i = 0; i < 45; i++) {
+    const c = document.createElement('div');
+    c.className = 'confetti pop';
+    c.style.left = (10 + Math.random() * 80) + '%';
+    c.style.animationDelay = (Math.random() * 0.6) + 's';
+    c.style.animationDuration = (1.8 + Math.random() * 1.2) + 's';
+    c.style.background = palette[Math.floor(Math.random() * palette.length)];
+    const size = 4 + Math.random() * 8;
+    c.style.width = size + 'px';
+    c.style.height = size + 'px';
+    box.appendChild(c);
+  }
+}
+
+document.getElementById('subscribeModal').addEventListener('click', function(e) {
+  if (e.target === this) closeSubscribeModal();
+});
+</script>
+
+<script src="../script.js"></script>
+</body>
+</html>
